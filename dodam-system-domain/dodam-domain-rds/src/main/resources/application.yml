@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: dodam-domain-rds
