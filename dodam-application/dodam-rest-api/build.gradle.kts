@@ -12,8 +12,9 @@ val bootJar: BootJar by tasks
 bootJar.enabled = false
 jar.enabled = true
 
-subprojects {
-    dependencies {
 
-    }
+dependencies {
+    implementation(project(":dodam-system-domain:dodam-domain-rds"))
+
+    implementation("org.springframework.boot:spring-boot-starter-web")
 }

@@ -14,5 +14,6 @@ jar.enabled = true
 
 
 dependencies {
+    implementation("org.jetbrains.exposed:exposed-spring-boot-starter:0.55.0")
     implementation("org.springframework.boot:spring-boot-starter-web")
 }
