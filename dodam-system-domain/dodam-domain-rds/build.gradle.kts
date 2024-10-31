@@ -14,15 +14,15 @@ jar.enabled = true
 
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-web")
-
     implementation("org.jetbrains.exposed:exposed-core:0.55.0")
     implementation("org.jetbrains.exposed:exposed-crypt:0.55.0")
     implementation("org.jetbrains.exposed:exposed-dao:0.55.0")
     implementation("org.jetbrains.exposed:exposed-jdbc:0.55.0")
 
-    implementation("org.jetbrains.exposed:exposed-kotlin-datetime:0.55.0")
+    implementation("org.jetbrains.exposed:exposed-java-time:0.55.0")
 
     implementation("org.jetbrains.exposed:exposed-json:0.55.0")
     implementation("org.jetbrains.exposed:exposed-spring-boot-starter:0.55.0")
+    implementation("org.springframework.boot:spring-boot-starter-data-jdbc")
+    runtimeOnly("com.mysql:mysql-connector-j")
 }
