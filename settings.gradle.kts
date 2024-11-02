@@ -7,6 +7,10 @@ include(
 )
 
 include(
+    "dodam-application:dodam-rest-api"
+)
+
+include(
     "dodam-in-system-available:dodam-rds-client"
 )
 
