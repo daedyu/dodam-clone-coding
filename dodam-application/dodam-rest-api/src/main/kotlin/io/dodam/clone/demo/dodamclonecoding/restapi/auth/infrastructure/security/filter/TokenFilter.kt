@@ -4,8 +4,10 @@ import io.dodam.clone.demo.dodamclonecoding.restapi.auth.infrastructure.security
 import jakarta.servlet.FilterChain
 import jakarta.servlet.http.HttpServletRequest
 import jakarta.servlet.http.HttpServletResponse
+import org.springframework.stereotype.Component
 import org.springframework.web.filter.OncePerRequestFilter
 
+@Component
 class TokenFilter: OncePerRequestFilter() {
     override fun doFilterInternal(
         request: HttpServletRequest,
